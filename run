@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+java -Xms2g -Xmx2g -jar target/rdt.jar $*
