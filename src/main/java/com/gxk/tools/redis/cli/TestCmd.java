@@ -4,7 +4,7 @@ import java.util.concurrent.Callable;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
 
-@Command(name = "test")
+@Command(name = "test", hidden = true)
 public class TestCmd implements Callable<Integer> {
 
   @Option(names = "-x")

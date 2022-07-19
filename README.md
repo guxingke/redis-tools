@@ -196,6 +196,14 @@ native-image -jar target/rdt.jar
 
 编译结果为当前目录下 `rdt` 文件。
 
+## 其他
+
+- [自动完成(可点击)](https://picocli.info/autocomplete.html)
+
+```bash
+source <(./rdt generate-completion)
+```
+
 ## 参考
 
 - [Memory analysis](https://docs.redis.com/latest/ri/using-redisinsight/memory-analysis/)

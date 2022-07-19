@@ -58,6 +58,11 @@
       <version>RELEASE</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.8.9</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -81,6 +86,34 @@
           </compilerArgs>
         </configuration>
       </plugin>
+
+<!--      <plugin>-->
+<!--        <groupId>org.codehaus.mojo</groupId>-->
+<!--        <artifactId>exec-maven-plugin</artifactId>-->
+<!--        <version>3.0.0</version>-->
+<!--        <executions>-->
+<!--          <execution>-->
+<!--            <id>generate-autocompletion-script</id>-->
+<!--            <phase>package</phase>-->
+<!--            <goals>-->
+<!--              <goal>exec</goal>-->
+<!--            </goals>-->
+<!--          </execution>-->
+<!--        </executions>-->
+<!--        <configuration>-->
+<!--          <executable>java</executable>-->
+<!--          <arguments>-->
+<!--            <argument>-Dpicocli.autocomplete.systemExitOnError</argument>-->
+<!--            <argument>-cp</argument>-->
+<!--            <classpath/>-->
+<!--            <argument>picocli.AutoComplete</argument>-->
+<!--            <argument>&#45;&#45;force</argument>&lt;!&ndash; overwrite if exists &ndash;&gt;-->
+<!--            <argument>&#45;&#45;completionScript</argument>-->
+<!--            <argument>${project.build.directory}/rdt_completion.sh</argument>-->
+<!--            <argument>com.gxk.tools.redis.cli.RedisTools</argument>&lt;!&ndash; replace with your class &ndash;&gt;-->
+<!--          </arguments>-->
+<!--        </configuration>-->
+<!--      </plugin>-->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>

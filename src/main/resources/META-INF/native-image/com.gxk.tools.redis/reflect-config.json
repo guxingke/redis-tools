@@ -1,0 +1,11 @@
+[
+  {
+    "name" : "com.gxk.tools.redis.cli.TestJsonCmd$Demo",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true,
+    "allDeclaredFields" : true,
+    "allPublicFields" : true
+  }
+]

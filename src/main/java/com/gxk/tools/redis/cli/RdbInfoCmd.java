@@ -3,6 +3,7 @@ package com.gxk.tools.redis.cli;
 import com.gxk.tools.redis.rdb.AuxField;
 import com.gxk.tools.redis.rdb.Entry;
 import com.gxk.tools.redis.rdb.RdbParser;
+import java.io.File;
 import picocli.CommandLine;
 import picocli.CommandLine.Parameters;
 
@@ -10,7 +11,7 @@ import picocli.CommandLine.Parameters;
 public class RdbInfoCmd implements Runnable {
 
   @Parameters(index = "0")
-  String file;
+  File file;
 
   @Override
   public void run() {

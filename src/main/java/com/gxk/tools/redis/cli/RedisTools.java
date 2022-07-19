@@ -1,5 +1,6 @@
 package com.gxk.tools.redis.cli;
 
+import picocli.AutoComplete.GenerateCompletion;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.ParseResult;
@@ -21,6 +22,8 @@ import picocli.CommandLine.Spec;
         RdbMemoryCmd.class,
         ScanCmd.class,
         CommandLine.HelpCommand.class,
+        TestJsonCmd.class,
+        GenerateCompletion.class,
     }
 )
 // @formatter:on
