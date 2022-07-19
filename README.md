@@ -14,6 +14,32 @@ Redis 相关的一些命令行工具集合。
 2. 流式分析，内存占用低。
 3. 使用 native-image aot 编译，服务器可不配置 `Java` 环境。
 
+## 快速开始
+
+### 可执行文件
+
+支持 linux x86_64, macos arm, x86_64。
+
+```bash
+# 下载，赋可执行权限
+curl -o rdt -L "https://github.com/guxingke/redis-tools/releases/download/v0.0.1/rdt-$(uname)-$(arch)" && chmod +x ./rdt
+
+# 执行
+./rdt
+```
+
+### fat-jar
+
+需要 jdk17 运行时。
+
+```bash
+# 下载
+curl -L "https://github.com/guxingke/redis-tools/releases/download/v0.0.1/rdt.jar"
+
+# 执行
+java -jar rdt.jar
+```
+
 ## 使用
 
 以可执行文件为例，需编译或下载可执行文件。
